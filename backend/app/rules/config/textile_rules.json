@@ -1,0 +1,21 @@
+{
+  "category": "textile",
+  "label": "Clothing / textile",
+  "quantity_basis": [
+    "number",
+    "length",
+    "area"
+  ],
+  "best_before_required": false,
+  "unit_sale_price_applicable": false,
+  "additional_declarations": [
+    {
+      "id": "size",
+      "field": "size_dimensions",
+      "title": "Size / dimensions declaration",
+      "source": "Commodity-specific declaration (Rule 15 type)",
+      "severity": "LOW"
+    }
+  ],
+  "notes": ""
+}

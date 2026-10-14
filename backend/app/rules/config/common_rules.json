@@ -1,0 +1,53 @@
+{
+  "_note": "Engine-wide settings. Every threshold used by a rule lives here so that it can be reviewed and changed without touching code.",
+  "severity_weights": {
+    "HIGH": 3,
+    "MEDIUM": 2,
+    "LOW": 1
+  },
+  "scoring": {
+    "pass_credit": 1.0,
+    "needs_verification_credit": 0.5,
+    "non_compliant_credit": 0.0,
+    "description": "score = Σ(weight × credit) / Σ(weight of applicable checks) × 100. NOT_APPLICABLE checks are excluded from the denominator. The score is informational; the overall status is decided by the status rules below."
+  },
+  "overall_status_rules": [
+    "Any NON_COMPLIANT check with HIGH severity  -> NON_COMPLIANT",
+    "Any other NON_COMPLIANT check              -> PARTIALLY_COMPLIANT",
+    "Else any NEEDS_VERIFICATION check           -> NEEDS_VERIFICATION",
+    "Else                                        -> COMPLIANT"
+  ],
+  "field_confidence": {
+    "detected": 70,
+    "low": 45
+  },
+  "missing_declaration": {
+    "_note": "A declaration that is not found is NEEDS_VERIFICATION. Measured on the synthetic validation set, treating OCR absence as proof produced a NON_COMPLIANT finding on 31% of defect-free, fully photographed labels (OCR misses, mostly blurred / stamped text), versus 1.5% when absence stays 'needs verification'. Absence is therefore never concluded from OCR alone unless an administrator sets allow_non_compliant_from_ocr_absence=true; then it is concluded only when the inspector confirms all panels were photographed, no image is POOR and mean OCR confidence >= min_mean_ocr_confidence.",
+    "allow_non_compliant_from_ocr_absence": false,
+    "min_mean_ocr_confidence": 75
+  },
+  "usp_tolerance": {
+    "relative": 0.02,
+    "absolute_rupees": 0.5
+  },
+  "legibility": {
+    "min_field_confidence_for_pass": 75,
+    "min_contrast_ratio_for_pass": 3.0,
+    "non_compliant_contrast_ratio": 1.5
+  },
+  "misleading_expressions": {
+    "tax_exclusive_mrp": [
+      "plus taxes",
+      "plus local taxes",
+      "+ taxes",
+      "taxes extra",
+      "exclusive of taxes",
+      "excl. of taxes",
+      "excluding taxes"
+    ],
+    "price_qualifiers": [
+      "mrp approx",
+      "price approx"
+    ]
+  }
+}

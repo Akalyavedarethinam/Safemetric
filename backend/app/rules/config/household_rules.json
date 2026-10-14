@@ -1,0 +1,14 @@
+{
+  "category": "household",
+  "label": "Household goods",
+  "quantity_basis": [
+    "mass",
+    "volume",
+    "number",
+    "length"
+  ],
+  "best_before_required": false,
+  "unit_sale_price_applicable": true,
+  "additional_declarations": [],
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "category": "hardware",
+  "label": "Hardware",
+  "quantity_basis": [
+    "number",
+    "mass",
+    "length"
+  ],
+  "best_before_required": false,
+  "unit_sale_price_applicable": false,
+  "additional_declarations": [],
+  "notes": ""
+}

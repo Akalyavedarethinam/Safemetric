@@ -1,0 +1,48 @@
+{
+  "_note": "Minimum height of numerals in the net-quantity declaration. Two bases are configured: the principal-display-panel (PDP) area table, used when the inspector supplies the physical panel width AND height, otherwise the net-quantity table. Verify these values against the currently notified text of Rule 7 before production use.",
+  "tolerance": 0.15,
+  "pdp_area_cm2": [
+    {
+      "max": 100,
+      "normal_mm": 1,
+      "embossed_mm": 2
+    },
+    {
+      "max": 500,
+      "normal_mm": 2,
+      "embossed_mm": 4
+    },
+    {
+      "max": 2500,
+      "normal_mm": 4,
+      "embossed_mm": 6
+    },
+    {
+      "max": null,
+      "normal_mm": 6,
+      "embossed_mm": 8
+    }
+  ],
+  "net_quantity_g_or_ml": [
+    {
+      "max": 50,
+      "normal_mm": 1,
+      "embossed_mm": 2
+    },
+    {
+      "max": 200,
+      "normal_mm": 2,
+      "embossed_mm": 4
+    },
+    {
+      "max": 1000,
+      "normal_mm": 4,
+      "embossed_mm": 6
+    },
+    {
+      "max": null,
+      "normal_mm": 6,
+      "embossed_mm": 8
+    }
+  ]
+}

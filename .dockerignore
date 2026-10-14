@@ -1,0 +1,11 @@
+**/node_modules
+frontend/dist
+backend/data
+**/__pycache__
+**/.pytest_cache
+.git
+*.zip
+datasets
+evaluation/results/predictions
+training
+**/*.jsonl

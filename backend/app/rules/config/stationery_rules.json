@@ -1,0 +1,13 @@
+{
+  "category": "stationery",
+  "label": "Stationery",
+  "quantity_basis": [
+    "number",
+    "length",
+    "mass"
+  ],
+  "best_before_required": false,
+  "unit_sale_price_applicable": false,
+  "additional_declarations": [],
+  "notes": ""
+}

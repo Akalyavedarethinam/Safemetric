@@ -1,0 +1,19 @@
+{
+  "category": "electronics",
+  "label": "Electronics",
+  "quantity_basis": [
+    "number"
+  ],
+  "best_before_required": false,
+  "unit_sale_price_applicable": false,
+  "additional_declarations": [
+    {
+      "id": "bis",
+      "field": "bis_mark",
+      "title": "BIS registration / standard mark (R-number or IS mark)",
+      "source": "BIS Compulsory Registration Order (where the product is notified)",
+      "severity": "MEDIUM"
+    }
+  ],
+  "notes": ""
+}

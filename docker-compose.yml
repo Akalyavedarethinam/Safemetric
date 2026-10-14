@@ -1,0 +1,28 @@
+# Production-like local stack: API + UI (one container) + PostgreSQL
+#   docker compose up --build        ->  http://localhost:8000
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: safemetric
+      POSTGRES_USER: safemetric
+      POSTGRES_PASSWORD: safemetric
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U safemetric"]
+      interval: 5s
+      retries: 10
+  app:
+    build: .
+    ports: ["8001:8000"]
+    environment:
+      DATABASE_URL: postgresql://safemetric:safemetric@db:5432/safemetric
+      SECRET_KEY: ${SECRET_KEY:-change-me-please-use-a-long-random-value-in-production}
+      DEFAULT_ADMIN_PASSWORD: ${DEFAULT_ADMIN_PASSWORD:-Admin@12345}
+      STORAGE_BACKEND: local
+    volumes: [appdata:/data]
+    depends_on:
+      db: { condition: service_healthy }
+volumes:
+  pgdata:
+  appdata:

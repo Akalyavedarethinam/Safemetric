@@ -1,0 +1,21 @@
+{
+  "category": "personal_care",
+  "label": "Personal care",
+  "quantity_basis": [
+    "mass",
+    "volume",
+    "number"
+  ],
+  "best_before_required": true,
+  "unit_sale_price_applicable": true,
+  "additional_declarations": [
+    {
+      "id": "batch",
+      "field": "batch_number",
+      "title": "Batch / lot number",
+      "source": "Commodity-specific labelling regulation",
+      "severity": "LOW"
+    }
+  ],
+  "notes": ""
+}

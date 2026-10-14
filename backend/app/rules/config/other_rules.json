@@ -1,0 +1,9 @@
+{
+  "category": "other",
+  "label": "Other",
+  "quantity_basis": [],
+  "best_before_required": false,
+  "unit_sale_price_applicable": true,
+  "additional_declarations": [],
+  "notes": "No commodity-specific configuration: quantity basis and additional declarations need manual verification."
+}

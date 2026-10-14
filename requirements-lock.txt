@@ -1,0 +1,28 @@
+# Exact versions used to generate the datasets, run the evaluations and train the model (Python 3.11, Linux).
+# Install these for byte-identical dataset regeneration; with other OpenCV / Pillow / numpy versions the
+# annotations are identical but image pixels can differ slightly (measured: < 0.3 grey levels on average).
+#   pip install -r requirements-lock.txt
+numpy==2.4.4
+opencv-python-headless==4.13.0.92
+pillow==12.2.0
+rapidocr-onnxruntime==1.4.4
+onnxruntime==1.25.0
+scikit-learn==1.8.0
+pandas==3.0.2
+joblib==1.5.3
+shapely==2.1.2
+rapidfuzz==3.14.6
+pytesseract==0.3.13
+fastapi==0.141.1
+uvicorn==0.46.0
+SQLAlchemy==2.0.54
+pydantic==2.13.3
+python-multipart==0.0.26
+bcrypt==5.0.0
+PyJWT==2.12.1
+httpx==0.28.1
+reportlab==4.4.10
+python-docx==1.2.0
+openpyxl==3.1.5
+pytest==9.1.1
+fonttools==4.62.1

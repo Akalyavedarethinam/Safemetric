@@ -1,0 +1,34 @@
+{
+  "category": "beverage",
+  "label": "Beverage",
+  "quantity_basis": [
+    "volume",
+    "mass"
+  ],
+  "best_before_required": true,
+  "unit_sale_price_applicable": true,
+  "additional_declarations": [
+    {
+      "id": "fssai_licence",
+      "field": "fssai_license",
+      "title": "FSSAI licence number",
+      "source": "Food Safety and Standards (Labelling and Display) Regulations, 2020",
+      "severity": "MEDIUM"
+    },
+    {
+      "id": "ingredients",
+      "field": "ingredients",
+      "title": "List of ingredients",
+      "source": "Commodity-specific labelling regulation",
+      "severity": "LOW"
+    },
+    {
+      "id": "nutrition",
+      "field": "nutrition_info",
+      "title": "Nutritional information",
+      "source": "Food Safety and Standards (Labelling and Display) Regulations, 2020",
+      "severity": "LOW"
+    }
+  ],
+  "notes": ""
+}

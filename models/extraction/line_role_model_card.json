@@ -1,0 +1,84 @@
+{
+  "model": "line-role classifier: char 2-4-gram TF-IDF + 21 layout features -> multinomial logistic regression",
+  "purpose": "propose brand / product-name lines (and a declaration type for every OCR line)",
+  "training_data": "TRAIN split only (synthetic). GT lines with synthetic OCR noise + real OCR output of train images",
+  "selection": "validation split OCR output: brand/product selection accuracy",
+  "selected": {
+    "mix": "gt+ocr",
+    "C": 3.0
+  },
+  "thresholds": {
+    "brand_name": 0.2,
+    "product_name": 0.2
+  },
+  "grid": [
+    {
+      "mix": "gt_only",
+      "C": 0.3,
+      "train_lines": 60530,
+      "val_macro_f1_lines": 0.8916,
+      "val_selection_accuracy": {
+        "brand_name": 0.9759,
+        "product_name": 0.9563
+      },
+      "fit_seconds": 71.9
+    },
+    {
+      "mix": "gt_only",
+      "C": 1.0,
+      "train_lines": 60530,
+      "val_macro_f1_lines": 0.8998,
+      "val_selection_accuracy": {
+        "brand_name": 0.9839,
+        "product_name": 0.9762
+      },
+      "fit_seconds": 86.1
+    },
+    {
+      "mix": "gt_only",
+      "C": 3.0,
+      "train_lines": 60530,
+      "val_macro_f1_lines": 0.9043,
+      "val_selection_accuracy": {
+        "brand_name": 0.988,
+        "product_name": 0.9841
+      },
+      "fit_seconds": 97.4
+    },
+    {
+      "mix": "gt+ocr",
+      "C": 0.3,
+      "train_lines": 74076,
+      "val_macro_f1_lines": 0.914,
+      "val_selection_accuracy": {
+        "brand_name": 0.992,
+        "product_name": 0.9921
+      },
+      "fit_seconds": 79.6
+    },
+    {
+      "mix": "gt+ocr",
+      "C": 1.0,
+      "train_lines": 74076,
+      "val_macro_f1_lines": 0.9246,
+      "val_selection_accuracy": {
+        "brand_name": 0.992,
+        "product_name": 0.996
+      },
+      "fit_seconds": 96.7
+    },
+    {
+      "mix": "gt+ocr",
+      "C": 3.0,
+      "train_lines": 74076,
+      "val_macro_f1_lines": 0.9304,
+      "val_selection_accuracy": {
+        "brand_name": 0.992,
+        "product_name": 1.0
+      },
+      "fit_seconds": 125.0
+    }
+  ],
+  "seconds": 577.1,
+  "limitations": "Learned on synthetic labels with fictional brands; real packaging with decorative logos, stylised type or several brands on one panel will be harder. The extractor always marks model-derived names so an inspector can verify them."
+}

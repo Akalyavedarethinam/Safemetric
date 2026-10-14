@@ -1,0 +1,21 @@
+{
+  "category": "pharmaceutical",
+  "label": "Pharmaceutical / non-pharmaceutical packaged goods",
+  "quantity_basis": [
+    "number",
+    "mass",
+    "volume"
+  ],
+  "best_before_required": true,
+  "unit_sale_price_applicable": false,
+  "additional_declarations": [
+    {
+      "id": "batch",
+      "field": "batch_number",
+      "title": "Batch / lot number",
+      "source": "Commodity-specific labelling regulation",
+      "severity": "LOW"
+    }
+  ],
+  "notes": "Drugs are largely governed by the Drugs & Cosmetics Rules; only PCR declarations are evaluated here."
+}

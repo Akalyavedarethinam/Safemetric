@@ -1,0 +1,21 @@
+# Render.com blueprint: one Docker web service + managed PostgreSQL.
+# Note: Render's disk is ephemeral unless you attach a persistent disk or use STORAGE_BACKEND=s3.
+services:
+  - type: web
+    name: safemetric
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    disk: { name: safemetric-data, mountPath: /data, sizeGB: 5 }
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: { name: safemetric-db, property: connectionString }
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEFAULT_ADMIN_PASSWORD
+        sync: false
+      - key: STORAGE_BACKEND
+        value: local
+databases:
+  - name: safemetric-db
+    plan: basic-256mb

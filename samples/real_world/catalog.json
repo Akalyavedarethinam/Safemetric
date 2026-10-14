@@ -1,0 +1,218 @@
+[
+  {
+    "id": "tata_salt",
+    "reference_product": "Tata Salt",
+    "category": "food",
+    "typical_quantity": "1 kg",
+    "font_profile": "sans",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "aashirvaad_atta",
+    "reference_product": "Aashirvaad Atta",
+    "category": "food",
+    "typical_quantity": "5 kg",
+    "font_profile": "cabin",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "parle_g",
+    "reference_product": "Parle-G",
+    "category": "food",
+    "typical_quantity": "800 g",
+    "font_profile": "sans",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "maggi",
+    "reference_product": "MAGGI",
+    "category": "food",
+    "typical_quantity": "70 g",
+    "font_profile": "cabin",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "britannia_good_day",
+    "reference_product": "Britannia Good Day",
+    "category": "food",
+    "typical_quantity": "200 g",
+    "font_profile": "sans",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "bisleri",
+    "reference_product": "Bisleri",
+    "category": "beverage",
+    "typical_quantity": "1 L",
+    "font_profile": "cabin",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "frooti",
+    "reference_product": "Frooti",
+    "category": "beverage",
+    "typical_quantity": "200 ml",
+    "font_profile": "sans",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "dove_shampoo",
+    "reference_product": "Dove Shampoo",
+    "category": "personal_care",
+    "typical_quantity": "180 ml",
+    "font_profile": "cabin",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "colgate",
+    "reference_product": "Colgate",
+    "category": "personal_care",
+    "typical_quantity": "150 g",
+    "font_profile": "sans",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "surf_excel",
+    "reference_product": "Surf Excel",
+    "category": "household",
+    "typical_quantity": "1 kg",
+    "font_profile": "cabin",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "harpic",
+    "reference_product": "Harpic",
+    "category": "household",
+    "typical_quantity": "500 ml",
+    "font_profile": "sans",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "nutella",
+    "reference_product": "Nutella",
+    "category": "food",
+    "typical_quantity": "350 g",
+    "font_profile": "cabin",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "pringles",
+    "reference_product": "Pringles",
+    "category": "food",
+    "typical_quantity": "107 g",
+    "font_profile": "sans",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "voltage_charger",
+    "reference_product": "USB Charger",
+    "category": "electronics",
+    "typical_quantity": "1 N",
+    "font_profile": "cabin",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "led_bulb",
+    "reference_product": "LED Bulb",
+    "category": "electrical",
+    "typical_quantity": "1 N",
+    "font_profile": "sans",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "socks",
+    "reference_product": "Cotton Socks",
+    "category": "textile",
+    "typical_quantity": "2 N",
+    "font_profile": "cabin",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "notebook",
+    "reference_product": "Classmate Notebook",
+    "category": "stationery",
+    "typical_quantity": "200 pages",
+    "font_profile": "sans",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  },
+  {
+    "id": "fevicol",
+    "reference_product": "Fevicol",
+    "category": "hardware",
+    "typical_quantity": "1 kg",
+    "font_profile": "cabin",
+    "files": [
+      "front.jpg",
+      "back.jpg"
+    ],
+    "purpose": "OCR/extraction benchmark only; generated synthetic label, not an official package image."
+  }
+]

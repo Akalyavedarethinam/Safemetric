@@ -1,0 +1,9 @@
+# SafeMetric - everything needed to run, test, regenerate datasets, train and evaluate.
+# Application only:  pip install -r backend/requirements.txt
+-r backend/requirements-dev.txt
+# dataset generation / training / evaluation
+shapely>=2.0          # polygon IoU, visibility of rotated word boxes
+rapidfuzz>=3.0        # edit distance for CER / WER
+scikit-learn>=1.5     # training the line-role model
+pandas>=2.0
+joblib>=1.3
